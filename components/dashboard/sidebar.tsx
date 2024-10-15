@@ -91,7 +91,7 @@ const Sidebar = () => {
       >
         <div className="mb-10 flex justify-between items-center">
           <Link href="/">
-            <Logo className="w-10 h-10" />
+            <Logo />
           </Link>
           <X
             className="text-white cursor-pointer lg:hidden"

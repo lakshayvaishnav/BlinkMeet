@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { Session, useSidebarStore } from "@/store/store";
 import { ArrowUpRight, CheckCircle, ChevronsRight, Plus } from "lucide-react";
 import Link from "next/link";
