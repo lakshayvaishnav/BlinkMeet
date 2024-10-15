@@ -44,7 +44,7 @@ export default function TimeSlotForm() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const linkToCopy = `http://localhost:3000/join/${blinkId}`;
+    const linkToCopy = `https://blink-meet.vercel.app/join/${blinkId}`;
     navigator.clipboard.writeText(linkToCopy).then(() => {
       setCopied(true);
       setTimeout(() => {
@@ -313,7 +313,9 @@ export default function TimeSlotForm() {
               </h1>
 
               <div className="px-3 py-2 mt-2 border rounded-lg bg-gray-800 flex items-center justify-between">
-                <p className="text-blue-300">http://localhost:3000/{blinkId}</p>
+                <p className="text-blue-300">
+                  https://blink-meet.vercel.app/{blinkId}
+                </p>
                 <div onClick={handleCopy} className="cursor-pointer">
                   {copied ? (
                     <CheckCircle className="text-green-500" />
